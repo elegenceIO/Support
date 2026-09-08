@@ -1,0 +1,16 @@
+{
+    "name": "elegenceio/support",
+    "description": "Support Classes for lazarusphp framework",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ElegenceIO\\Support\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "itzzpadre"
+        }
+    ],
+    "require": {}
+}
