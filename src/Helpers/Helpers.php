@@ -11,7 +11,7 @@ class Helpers
     private string $base = "";
     public function __construct()
     {
-        $this->add(rtrim(dirname(__DIR__,2),\DIRECTORY_SEPARATOR).\DIRECTORY_SEPARATOR."Files/Helpers/");
+        $this->add(rtrim(dirname(__DIR__,2),\DIRECTORY_SEPARATOR).\DIRECTORY_SEPARATOR."Files/");
     }
 
     public function add(string $path):void
@@ -29,7 +29,7 @@ class Helpers
             
             if(!Directories::has($helper))
             {
-                echo "No directory found";
+                throw new Exception("Directory Helper not found");
             }
             
             foreach(new DirectoryIterator($helper) as $item)
